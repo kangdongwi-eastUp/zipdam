@@ -1,0 +1,82 @@
+.content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content ul li {
+    width: calc(50% - 55px);
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 6px rgba(144, 144, 144, 0.25);
+    border: 1px solid #E9E9E9;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+.content ul li:hover {
+    box-shadow: 0px 1px 6px rgba(144, 144, 144, 0.8);
+}
+.content ul li span {
+    background: coral;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 10px;
+    line-height: 24px;
+    vertical-align: text-bottom;
+}
+.content ul li button {
+    font-size: 24px;
+    padding: 5px 8px;
+    border: 0;
+    background: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content ul li button:hover {
+    background: #ccc;
+}
+.data-group {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 2;
+}
+.data-group span {
+    font-weight: bold;
+    display: block;
+}
+.content h2 button {
+    font-size: 24px;
+    padding: 5px 8px;
+    border: 0;
+    background: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-back {
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 5px 20px;
+    border: 0;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .content ul li {
+        width: 100%;
+    }
+    body > div > div > h2 > span {
+        display: none;
+    }
+}

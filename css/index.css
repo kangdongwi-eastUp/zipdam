@@ -1,0 +1,22 @@
+/* 모바일 내부 콘텐츠 */
+.mobile-box{background-color:#fff;color:#000;}
+.header{padding:30px 20px 20px;background-color:#fff;font-size:16px;}
+.header span{padding:10px;background-color:#ebc231;border:none;border-radius:5px;}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px;}
+.menu div{padding:10px;text-align:center;font-size:16px;position:relative;line-height:50px;}
+.menu div img{display:block;margin:0 auto;border-radius:80px;}
+.menu input[type="checkbox"]{display:none;/* 라디오 버튼 숨기기 */}
+.menu label {cursor:pointer;}
+.menu label img{transition:opacity 0.3s;}
+.menu label.checked img{box-shadow: 5px 5px 5px #ebc231;}
+.menu label.checked::after{content:"\f058";font-family:"Font Awesome 5 Free";font-weight:900;font-size:24px;color:#000;position:absolute;top:0px;left:15px;}
+.selection_btn{display:none;position:absolute;top:70%;left:50%;color:#fff;transform:translate(-50%,-50%);padding:20px;background:#000;border:1px solid #000;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+#selection-count{color:#000;background-color:#fff;border-radius:10px;padding:2px 6px;}
+.selection_btn a{color:#fff;text-decoration:none;padding:20px;white-space:nowrap;}
+/* 슬라이더 */
+.slider_wrap{width:100%;overflow:hidden;position:relative;}
+.bx-wrapper{margin-bottom:0px;padding:0;-moz-box-shadow:0 0 0px #ccc;-webkit-box-shadow:0 0 0px #ccc;box-shadow:0 0 0px #ccc;border:0px solid #fff;}
+.btn-prev,.btn-next{position:absolute;top:50%;font-size:20px;}
+.btn-prev{left:5px;}
+.btn-next{right:5px;}
+.counter{position:absolute;bottom:10px;right:10px;background:rgb(0,0,0,0.5);color:#fff;font-size:12px;padding:5px 10px;border-radius:15px;}

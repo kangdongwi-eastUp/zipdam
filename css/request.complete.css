@@ -1,0 +1,30 @@
+.content_wrap {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 100px 30px;
+}
+
+.btn-submit {
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-right: 5px;
+}
+@media screen and (max-width:768px){
+    .mobile-box {
+        width: 100%;
+        border-radius: 0;
+        background-color: #FFF;
+        color: #000;
+    }
+}

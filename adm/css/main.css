@@ -1,0 +1,26 @@
+ /* 기본 스타일 초기화 */
+ body,html{margin:0;padding:0;font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;height:100%;}
+.container{display:flex;min-height:100vh;}
+/* 네비게이션 바 스타일 */
+nav{width:250px;background-color:#2c3e50;color:#ecf0f1;display:flex;flex-direction:column;padding-top:20px;box-shadow:2px 0 5px rgba(0,0,0,0.1);transition:transform 0.3s ease;}
+nav.hidden{transform:translateX(-100%);}
+nav .btns{display:flex;justify-content:flex-start;margin-bottom:20px;padding:0 0 0 20px;}
+nav .btns a{color:#ecf0f1;text-decoration:none;margin-right:15px;}
+nav .btns a:hover{color:#ff9900;}
+nav h2{color:#ecf0f1;margin:0 0 20px 0;padding:0 20px;}
+nav h2 a{color:#ecf0f1;text-decoration:none;}
+nav ul{list-style:none;padding:0;margin:0;}
+nav ul li{margin:10px 0;}
+nav ul li a{color:#ecf0f1;text-decoration:none;padding:10px 20px;display:block;border-radius:5px;transition:background-color 0.3s ease;}
+nav ul li a:hover{background-color:#34495e;}
+/* 메인 콘텐츠 스타일 */
+.content{flex:1;padding:20px;}
+.content h2{margin-top:0;color:#2c3e50;}
+.content p{font-size:1.1rem;line-height:1.6;}
+/* 모바일 환경 메뉴 버튼 */
+.menu-toggle{display:none;position:fixed;top:20px;right:20px;background-color:#2c3e50;color:#ecf0f1;border:none;padding:10px 15px;border-radius:5px;z-index:1000;cursor:pointer;}
+@media screen and (max-width:768px){
+    nav{position:fixed;top:0;left:0;height:100%;transform:translateX(-100%);z-index:999;}
+    nav.visible{transform:translateX(0);}
+    .menu-toggle{display:block;}
+}
