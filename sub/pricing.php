@@ -26,16 +26,16 @@
             </div>
 
             <!-- 중앙 모바일 UI -->
-            <div class="mobile-box">
+            <div class="mobile-box">    
                 <div class="content_wrap">
                     <div class="header">
                         <h1><span>입주민동의서는</span> <br>새로운 이웃을 만나는 첫 모습</h1>
                         <p>이웃에게 다소 불편함을 드리는 인테리어 공사,<br>그만큼 첫인상은 중요하게 작용합니다.</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
+                        <img src="/img/main/icon01.png" alt="입주민 동의서">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
                     </div>
                     <div class="pricing-table">
                         <div class="pricing-row">
@@ -76,9 +76,9 @@
                         <p>깨끗하게 시공된 보양은 <br>모든 이웃에게 찬사를 받게 됩니다.</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
+                        <img src="/img/main/icon02.png" alt="보양">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
                     </div>
                     <div class="pricing-table">
                         <div class="pricing-row">
@@ -119,9 +119,9 @@
                         <p>보양 탈거도 문제 없이 깨끗하게<br>전문가가 탈거 함으로서 끝까지 책임지는 서비스를 제공합니다.</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
+                        <img src="/img/main/icon05.png" alt="보양탈거">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
                     </div>
                     <div class="pricing-table">
                         <div class="pricing-row">
@@ -142,9 +142,9 @@
                         <p>발코니 확장, 비내력벽 철거, 화단철거<br>가벽신설 공사에 행위허가는 선택이 아닌 필수 입니다.</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
+                        <img src="/img/main/icon03.png" alt="행위허가">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
                     </div>
                     <div class="pricing-table">
                         <div class="pricing-row">
@@ -165,9 +165,9 @@
                         <p>사용검사에 필요한 모든 소방시설을<br>직영으로 운영함으로 A/S까지 확실히 책임을 다합니다.</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
+                        <img src="/img/main/icon07.png" alt="사용검사">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
                     </div>
                     <div class="pricing-table">
                         <div class="pricing-row">
@@ -213,9 +213,9 @@
                         <p>일반 입주청소가 아닌,<br>인테리어 공사가 끝난 현장을 잘 아는 전문청소를 지원합니다.</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
+                        <img src="/img/main/icon06.png" alt="입주청소">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
                     </div>
                     <div class="pricing-table">
                         <div class="pricing-row">
@@ -225,6 +225,199 @@
                         </div>
                     </div>                       
                 </div>                    
+                <div class="content_wrap">
+                    <div class="header">
+                        <h1><span>방충망시공으로</span><br>실내 공기의 변화를 느껴보세요.</h1>
+                        <p>노화된 방충망은 <br>미세먼지 실내유입의 원인이 됩니다.</p>
+                    </div>
+                    <div class="image-gallery">
+                        <img src="/img/main/icon08.png" alt="방충망 시공">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
+                    </div>
+                    <div class="pricing-table">
+                        <div class="pricing-row">
+                            <div>알루미늄 방충망</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">22,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">44,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(전창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">55,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">250,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">300,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">360,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>섬유미세 방충망</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">33,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">55,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(전창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">66,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">280,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">330,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">400,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>스텐레스 방충망</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">33,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">66,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(전창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">77,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">300,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">360,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">440,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div style="font-weight:bold">블랙스텐레스 방충망 <span style="font-style:italic;">(Premium)</span></div>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">55,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(반창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">77,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(전창)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">99,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">360,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">440,000원</span>
+                        </div>
+                        <div class="pricing-row">
+                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">550,000원</span>
+                        </div>
+                    </div>                       
+                </div>                     
+                <div class="content_wrap">
+                    <div class="header">
+                        <h1><span>폐기물 수거로</span><br>깔끔한 인테리어 마무리</h1>
+                        <p>전문팀 운영으로 안전한 폐기물 수거</p>
+                    </div>
+                    <div class="image-gallery">
+                        <img src="/img/main/icon09.png" alt="폐기물 수거">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 2">
+                        <img src="/img/sub/dummy.jpg" alt="이미지 3"> -->
+                    </div>
+                    <div class="pricing-table">
+                        <div class="pricing-row">
+                            <div>소형<span class="desc">(10마대 이하)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">70,000원 부터 </span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>6분의1차 이하</div>
+                            <span>...................................</span>
+                            <span class="price">100,000원 부터 </span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>3분의1차 이하</div>
+                            <span>...................................</span>
+                            <span class="price">180,000원 부터 </span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>2분의1차 이하</div>
+                            <span>...................................</span>
+                            <span class="price">280,000원 부터 </span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>3분의2차 이하</div>
+                            <span>...................................</span>
+                            <span class="price">370,000원 부터 </span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>1차 이하</div>
+                            <span>...................................</span>
+                            <span class="price">460,000원 부터 </span>
+                        </div>
+                        <div class="pricing-row">
+                            <div>현장정리+하역<span class="desc">(1시간)</span></div>
+                            <span>.......................................</span>
+                            <span class="price">20,000원</span>
+                        </div>
+                    </div>                       
+                </div>               
                 <div class="content_wrap">
                     <div class="title"><i class="fa-solid fa-circle-exclamation"></i> 안내사항</div>
                     <ul class="info">

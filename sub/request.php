@@ -8,6 +8,7 @@
         $error_message = "잘못된 접근입니다.";
     }
 ?>
+
     <div class="container">
         <!-- 전체 배경 -->
         <div class="background">
@@ -47,13 +48,13 @@
                                 공사 기간을 입력해 주세요.<span class="required">*</span>
                                 <p>아직, 확정되지 않았다면 예상일도 좋아요.</p>
                             </label>
-                            <input type="date" id="date_begin" name="date_begin" class="form-control small" required> 부터 
-                            <input type="date" id="date_end" name="date_end" class="form-control small" required>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="시작일" required> 부터 
+                            <input type="text" id="date_end" name="date_end" class="form-control small datepicker" placeholder="종료일" required>
                         </div>
                     <?php elseif (in_array('curing', $itemArray)): ?>
                         <div class="form-group">
                             <label for="date_begin">공사 시작일 또는 시공희망일을 선택해 주세요.<span class="required">*</span></label>
-                            <input type="date" id="date_begin" name="date_begin" class="form-control" required>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="2025-01-01" required>
                         </div>
                     <?php elseif (in_array('door', $itemArray)): ?>
                         <div class="form-group">
@@ -61,7 +62,7 @@
                                 시공 희망일 또는 예상일을 입력해주세요.<span class="required">*</span>
                                 <p>아파트의 특성상 휴일은 시공이 어려울 수 있습니다.</p>
                             </label>
-                            <input type="date" id="date_begin" name="date_begin" class="form-control" required>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="2025-01-01" required>
                         </div>
                     <?php elseif (in_array('remove', $itemArray)): ?>
                         <div class="form-group">
@@ -70,13 +71,29 @@
                                 <p>보양탈거는 현장 특이 사항이 없는 이상 시간 지정은 어려워요.</p>
                             </label>
                             
-                            <input type="date" id="date_begin" name="date_begin" class="form-control" required>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="2025-01-01" required>
                         </div>
                     <?php elseif (in_array('cleaning', $itemArray)): ?>
                         <div class="form-group">
                             <label for="date_begin">입주청소 희망일을 선택해 주세요.<span class="required">*</span></label>
-                            <input type="date" id="date_begin" name="date_begin" class="form-control" required>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" required>
                         </div>
+                    <?php elseif (in_array('appForUse', $itemArray)): ?>        <!-- 사용검사 -->
+                        <div class="form-group">
+                            <label for="date_begin">검사 희망일을 선택해 주세요.<span class="required">*</span></label>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="2025-01-01" required>
+                            <!-- <input type="text" class="datepicker" placeholder="2025-01-01" id="date_begin" name="date_begin"> -->
+                        </div>
+                    <?php elseif (in_array('installScreen', $itemArray)): ?>        <!-- 방충망 시공 -->
+                        <div class="form-group">
+                            <label for="date_begin">시공 희망일을 선택해 주세요.<span class="required">*</span></label>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="2025-01-01" required>
+                        </div>                        
+                    <?php elseif (in_array('wasteCollection', $itemArray)): ?>        <!-- 폐기물 수거 -->
+                        <div class="form-group">
+                            <label for="date_begin">수거 희망일을 선택해 주세요.<span class="required">*</span></label>
+                            <input type="text" id="date_begin" name="date_begin" class="form-control small datepicker" placeholder="2025-01-01" required>
+                        </div>                        
                     <?php endif; ?>
                     
                     <!--공통A-->
@@ -113,14 +130,14 @@
                             </label>
                             <ul>
                                 <li><label><input type="radio" name="poc" value="신청인과 같아요." checked> 신청인과 같아요.</label></li>
-                                <li><label><input type="radio" name="poc" value="지금은 모르니 확정도면 별도 알려드릴께요."> 지금은 모르니 확정도면 별도 알려드릴께요.</label></li>
-                                <li>
+                                <li><label><input type="radio" name="poc" value="차후에 알려드릴게요."> 차후에 알려드릴게요.</label></li>
+                                <!-- <li>
                                     <label>
                                         <input type="radio" name="poc" value="다른분이 있어요."> 다른분이 있어요.<br>
                                         <input type="text" id="poc_name" name="poc_name" placeholder="성명" class="form-control small ml22">
                                         <input type="text" id="poc_phone" name="poc_phone" placeholder="연락처 (숫자만입력)" class="form-control medium ml22">
                                     </label>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <div class="form-group">
@@ -130,14 +147,14 @@
                             </label>
                             <ul>
                                 <li><label><input type="radio" name="residence" value="신청인과 같아요." checked> 신청인과 같아요.</label></li>
-                                <li><label><input type="radio" name="residence" value="지금은 모르니 확정도면 별도 알려드릴께요."> 지금은 모르니 확정도면 별도 알려드릴께요.</label></li>
-                                <li>
+                                <li><label><input type="radio" name="residence" value="차후에 알려드릴게요."> 차후에 알려드릴게요.</label></li>
+                                <!-- <li>
                                     <label>
                                         <input type="radio" name="residence" value="다른분이 있어요."> 다른분이 있어요.<br>
                                         <input type="text" id="residence_name" name="residence_name" placeholder="성명" class="form-control small ml22">
                                         <input type="text" id="residence_phone" name="residence_phone" placeholder="연락처 (숫자만입력)" class="form-control medium ml22">
                                     </label>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>                                         
                     <?php endif; ?>
@@ -148,6 +165,7 @@
                             <label for="construction">
                                 공사내용을 선택해 주세요.
                                 <p>발코니 확장, 비내력벽철거, 화단철거 등은 관할청에 행위허가를 받고 착공하는것이 가장 안전합니다.</p>
+                                <p>※ 행위허가 대상 항목은 굵게 표시됩니다.</p>
                             </label>
                             <div class="radio_wrap">
                                 <label><input type="radio" name="construction" value="도배" checked> 도배</label>
@@ -163,16 +181,16 @@
                                 <label><input type="radio" name="construction" value="전기.조명"> 전기.조명</label>
                                 <label><input type="radio" name="construction" value="욕실(기존타일도철거)"> 욕실(기존타일도철거)</label>
                                 <label><input type="radio" name="construction" value="욕실(덧시공)"> 욕실(덧시공)</label>
-                                <label><input type="radio" name="construction" value="일반철거"> 일반철거</label>
-                                <label><input type="radio" name="construction" value="화단철거"> 화단철거</label>
-                                <label><input type="radio" name="construction" value="반침철거"> 반침철거</label>
-                                <label><input type="radio" name="construction" value="다용도실철거"> 다용도실철거</label>
-                                <label><input type="radio" name="construction" value="그외 비내력벽철거"> 그외 비내력벽철거</label>
-                                <label><input type="radio" name="construction" value="거실확장"> 거실확장</label>
-                                <label><input type="radio" name="construction" value="침실확장"> 침실확장</label>
-                                <label><input type="radio" name="construction" value="주방확장"> 주방확장</label>
-                                <label><input type="radio" name="construction" value="그외 확장"> 그외 확장</label>
-                                <label><input type="radio" name="construction" value="바닥난방 재시공(전체철거후)"> 바닥난방 재시공(전체철거후)</label>
+                                <label class="approval"><input type="radio" name="construction" value="일반철거"> 일반철거</label>
+                                <label class="approval"><input type="radio" name="construction" value="화단철거"> 화단철거</label>
+                                <label class="approval"><input type="radio" name="construction" value="반침철거"> 반침철거</label>
+                                <label class="approval"><input type="radio" name="construction" value="다용도실철거"> 다용도실철거</label>
+                                <label class="approval"><input type="radio" name="construction" value="그외 비내력벽철거"> 그외 비내력벽철거</label>
+                                <label class="approval"><input type="radio" name="construction" value="거실확장"> 거실확장</label>
+                                <label class="approval"><input type="radio" name="construction" value="침실확장"> 침실확장</label>
+                                <label class="approval"><input type="radio" name="construction" value="주방확장"> 주방확장</label>
+                                <label class="approval"><input type="radio" name="construction" value="그외 확장"> 그외 확장</label>
+                                <label class="approval"><input type="radio" name="construction" value="바닥난방 재시공(전체철거후)"> 바닥난방 재시공(전체철거후)</label>
                                 <label><input type="radio" name="construction" value="기타"> 기타
                                 <input type="text" name="construction_etc" class="form-control medium ml22"></label>
                             </div>
@@ -180,7 +198,7 @@
                         <div class="form-group">
                             <label for="date_noise">
                                 공사중 소음이 집중되는 예상일은 언제일까요?
-                                <p>확정하기 어려우면 착고일로부터 3일로 신고해드려요.</p>
+                                <p>확정하기 어려우면 착공일로부터 3일로 신고해드려요.</p>
                             </label>
                             <input type="text" id="date_noise" name="date_noise" class="form-control">
                         </div>
@@ -292,8 +310,90 @@
                             <input type="text" id="space_size" name="space_size" class="form-control" placeholder="평수를 작성해 주세요.">
                         </div>                                                  
                     <?php endif; ?>
+                    <?php if (in_array('appForUse', $itemArray)):?>     <!-- 사용 검사 -->
+                        <div class="form-group">
+                            <label for="zipdam_approval">
+                                집담에서 행위허가를 진행 하셨나요?
+                            </label>
+                            <div class="radio_wrap">
+                                <label><input type="radio" name="zipdam_approval" value="네. 집담에서 행위허가를 했어요."> 네. 집담에서 행위허가를 했어요.</label>
+                                <label><input type="radio" name="zipdam_approval" value="아니요. 소방시설만 별도 의뢰 할 예정입니다."> 아니요. 소방시설만 별도 의뢰 할 예정입니다.</label>
+                            </div>
+                        </div>                                
+                    <?php endif; ?>
+                    <?php if (in_array('installScreen', $itemArray)):?>     <!-- 방충망 시공 -->
+                        <div class="form-group">
+                            <label for="mang_type">
+                                방충망의 "망" 소재를 선택해 주세요.<span class="required">*</span>
+                                <p>중복 선택이 가능합니다.</p>
+                            </label>
+                            <div class="radio_wrap">
+                                <label><input type="checkbox" name="mang_type[]" value="섬유미세망"> 섬유미세망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="알루미늄망"> 알루미늄망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="실버 스텐레스망"> 실버 스텐레스망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="블랙 스텐레스망"> 블랙 스텐레스망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="프로젝트롤망"> 프로젝트롤망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="현관 방충망"> 현관 방충망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="현관 방범 방충망"> 현관 방범 방충망</label>
+                                <label><input type="checkbox" name="mang_type[]" value="상담후 선택 하고 싶어요."> 상담후 선택 하고 싶어요.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mang_option">
+                                방충망 옵션을 선택해 주세요.<span class="required">*</span>
+                                <p>모헤어교체, 틀세척, 물구멍망은 무료 옵션입니다.</p>
+                            </label>
+                            <div class="radio_wrap">
+                                <label><input type="checkbox" name="mang_option[]" value="안전잠금장치"> 안전잠금장치</label>
+                                <label><input type="checkbox" name="mang_option[]" value="망틀 교체"> 망틀 교체</label>
+                                <label><input type="checkbox" name="mang_option[]" value="망틀 신규 제작"> 망틀 신규 제작</label>
+                                <label><input type="checkbox" name="mang_option[]" value="상담후 선택하고 싶어요."> 상담후 선택하고 싶어요.</label>
+                            </div>
+                        </div>    
+                    <?php endif; ?>
+                    <?php if (in_array('wasteCollection', $itemArray)):?>     <!-- 폐기물 수거 -->
+                        <div class="form-group">
+                            <label for="waste_option">
+                                수거할 예상 폐기물량을 선택해주세요.<span class="required">*</span>
+                                <p>기본 1톤 화물차로 운영됩니다.</p>
+                            </label>
+                            <div class="radio_wrap">
+                                <label><input type="checkbox" name="waste_option[]" value="약 10마대 이하"> 약 10마대 이하</label>
+                                <label><input type="checkbox" name="waste_option[]" value="약 6분의1차"> 약 6분의1차</label>
+                                <label><input type="checkbox" name="waste_option[]" value="약 3분의1차"> 약 3분의1차</label>
+                                <label><input type="checkbox" name="waste_option[]" value="약 2분의1차"> 약 2분의1차</label>
+                                <label><input type="checkbox" name="waste_option[]" value="약 3분의2차"> 약 3분의2차</label>
+                                <label><input type="checkbox" name="waste_option[]" value="약 1차"> 약 1차</label>
+                                <label><input type="checkbox" name="waste_option[]" value="알수 없으며 알아서 싣고 연락 주세요."> 알수 없으며 알아서 싣고 연락 주세요.</label>
+                                <label><input type="checkbox" name="waste_option[]" value="알수 없으며 싣기전 연락 주세요."> 알수 없으며 싣기전 연락 주세요.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="waste_content">
+                               참고할 사항이 있다면 작성해 주세요.
+                                <p>예) 긴급, 극소량</p>
+                            </label>
+                            <textarea name="waste_content" id="waste_content" placeholder="참고할 사항이 있다면 작성해주세요." rows="10" cols="50" style="resize:none;"></textarea>
+                        </div>    
+                    <?php endif; ?>
 
                     <!--공통B-->
+                    <div class="form-group">
+                        <label for="door_product">
+                            다른 서비스도 이용하실 예정이신가요?
+                        </label>
+                        <div class="radio_wrap">
+                            <label><input type="checkbox" name="other_service_option[]" value="입주민 동의서"> 입주민 동의서</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="승강기 및 기타보양"> 승강기 및 기타보양</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="행위허가"> 행위허가</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="방화문,유리,문"> 방화문,유리,문</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="보양탈거"> 보양탈거</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="입주청소"> 입주청소</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="사용검사"> 사용검사</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="방충망 시공"> 방충망 시공</label>
+                            <label><input type="checkbox" name="other_service_option[]" value="필요시 이용 할게요."> 필요시 이용 할게요.</label>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="payment_method"> 
                             결제 방법을 선택해 주세요.
@@ -363,6 +463,12 @@
                             // 모든 agree 체크박스가 체크되었는지 확인
                             checkAll.checked = Array.from(checkboxes).every(cb => cb.checked);
                         });
+                    });
+
+                    // Datepicker 초기화
+                    $( ".datepicker" ).datepicker({
+                        dateFormat: "yy-mm-dd",
+                        monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ]
                     });
                 });
 

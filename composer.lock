@@ -1,0 +1,78 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "036613fbfd4b70436a8f0f69df568471",
+    "packages": [
+        {
+            "name": "solapi/sdk",
+            "version": "5.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solapi/solapi-php.git",
+                "reference": "b68825dc168d56cb78ab9cfb96fa7059bc5d174d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solapi/solapi-php/zipball/b68825dc168d56cb78ab9cfb96fa7059bc5d174d",
+                "reference": "b68825dc168d56cb78ab9cfb96fa7059bc5d174d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nurigo\\Solapi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nurigo CX Team",
+                    "email": "contact@nurigo.net"
+                },
+                {
+                    "name": "Subin Lee",
+                    "email": "chandar.sblee@gmail.com",
+                    "homepage": "https://subux.dev"
+                }
+            ],
+            "description": "SOLAPI SDK for PHP",
+            "homepage": "https://solapi.com",
+            "keywords": [
+                "kakao alimtalk",
+                "kakao brand message",
+                "korea fax",
+                "korea lms",
+                "korea mms",
+                "korea sms",
+                "korea voice message",
+                "sdk",
+                "solapi"
+            ],
+            "support": {
+                "issues": "https://github.com/solapi/solapi-php/issues",
+                "source": "https://github.com/solapi/solapi-php/tree/v5.0.6"
+            },
+            "time": "2025-07-14T08:36:09+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

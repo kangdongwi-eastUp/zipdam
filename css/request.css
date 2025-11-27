@@ -1,6 +1,7 @@
 .content_wrap {
     margin-bottom:100px;
     position: relative;
+    padding-bottom: 100px; /* Added padding for fixed btns */
 }
 .form-group {
     padding:30px;
@@ -78,11 +79,28 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.form-group ul label, .form-group .radio_wrap .approval {
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 30%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 .form-group a {
     color: #000;
     text-decoration: none;
 }
-.btns {display:flex;justify-content:space-between;}
+.btns {
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .btn-submit {
     color: #fff;
     width: 70%;

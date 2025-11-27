@@ -47,6 +47,9 @@ switch ($row['items']) {
     case 'agreement,approval':
         $item_label = '입주민동의서 + 행위허가';
         break;
+    case 'appForUse':
+        $item_label = '사용검사';
+        break;
     default:
         $item_label = '알 수 없는 항목';
         break;
@@ -118,6 +121,24 @@ switch ($row['items']) {
                 <?php elseif (in_array('cleaning', $itemArray)): ?>
                     <div class="data-group">
                         <span class="date_begin">입주청소 희망일을 선택해 주세요.</span>
+                        <?php $date_prnt = "{$formatted_begin}"; ?>
+                        <?= $date_prnt ?>
+                    </div>
+                <?php elseif (in_array('appForUse', $itemArray)): ?>
+                    <div class="data-group">
+                        <span class="date_begin">검사 희망일을 선택해 주세요.</span>
+                        <?php $date_prnt = "{$formatted_begin}"; ?>
+                        <?= $date_prnt ?>
+                    </div>
+                <?php elseif (in_array('installScreen', $itemArray)): ?>
+                    <div class="data-group">
+                        <span class="date_begin">시공 희망일을 선택해 주세요.</span>
+                        <?php $date_prnt = "{$formatted_begin}"; ?>
+                        <?= $date_prnt ?>
+                    </div>
+                <?php elseif (in_array('wasteCollection', $itemArray)): ?>
+                    <div class="data-group">
+                        <span class="date_begin">수거 희망일을 선택해 주세요.</span>
                         <?php $date_prnt = "{$formatted_begin}"; ?>
                         <?= $date_prnt ?>
                     </div>
@@ -222,8 +243,38 @@ switch ($row['items']) {
                         <?= $row['space_size'] ?>
                     </div>                                                  
                 <?php endif; ?>
+                <?php if (in_array('appForUse', $itemArray)):?>
+                    <div class="data-group">
+                        <span class="zipdam_approval">집담에서 행위허가를 진행 하셨나요? </span>
+                        <?= $row['zipdam_approval'] ?>
+                    </div>                                                
+                <?php endif; ?>
+                <?php if (in_array('installScreen', $itemArray)):?>
+                    <div class="data-group">
+                        <span class="mang_type">방충망의 "망" 소재를 선택해 주세요.  </span>
+                        <?= $row['mang_type'] ?>
+                    </div>                                               
+                    <div class="data-group">
+                        <span class="mang_option">방충망 옵션을 선택해 주세요. </span>
+                        <?= $row['mang_option'] ?>
+                    </div>                                               
+                <?php endif; ?>
+                <?php if (in_array('wasteCollection', $itemArray)):?>
+                    <div class="data-group">
+                        <span class="waste_option">수거할 예상 폐기물량을 선택해주세요. </span>
+                        <?= $row['waste_option'] ?>
+                    </div>                                               
+                    <div class="data-group">
+                        <span class="waste_content">참고할 사항이 있다면 작성해 주세요.</span>
+                        <?= nl2br(htmlspecialchars($row['waste_content'])) ?>
+                    </div>                                               
+                <?php endif; ?>
 
                 <!--공통B-->
+                <div class="data-group">
+                    <span class="other_service_option">다른 서비스도 이용하실 예정이신가요? </span>
+                    <?= $row['other_service_option'] ?>
+                </div> 
                 <div class="data-group">
                     <span class="payment_method">결제 방법을 선택해 주세요. </span>
                     <?= $row['payment_method'] ?>

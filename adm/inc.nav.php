@@ -8,5 +8,6 @@
             <ul>
                 <li><a href="board.php">소식 관리</a></li>
                 <li><a href="request.php">서비스신청 관리</a></li>
+                <li><a href="password.php">비밀번호 변경</a></li>
             </ul>
         </nav>

@@ -17,7 +17,10 @@ $items = [
     'agreement,curing' => '입주민동의서 + 보양',
     'curing,approval' => '보양 + 행위허가',
     'agreement,curing,approval' => '입주민동의서 + 보양 + 행위허가',
-    'agreement,approval' => '입주민동의서 + 행위허가'
+    'agreement,approval' => '입주민동의서 + 행위허가',
+    'appForUse' => '사용검사',
+    'installScreen' => '방충망시공',
+    'wasteCollection' => '폐기물수거'
 ];
 
 $item_counts = [];

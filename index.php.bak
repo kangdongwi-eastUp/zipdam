@@ -76,62 +76,68 @@
                     <div><label><input type="checkbox" name="selection" data-idx="remove"><img src="/img/main/icon05.png" class="icon">보양탈거</label></div>
                     <div><label><input type="checkbox" name="selection" data-idx="cleaning"><img src="/img/main/icon06.png" class="icon">입주청소</label></div>
                     <div><label><input type="checkbox" name="selection" data-idx="appForUse"><img src="/img/main/icon07.png" class="icon">사용검사</label></div>
-                    <div><label><input type="checkbox" name="selection" data-idx="installScreen"><img src="/img/main/icon08.png" class="icon">방충망시공</label></div>
-                    <div><label><input type="checkbox" name="selection" data-idx="wasteCollection"><img src="/img/main/icon09.png" class="icon">폐기물수거</label></div>
                 </div>
                 <div id="layer" class="selection_btn">
                     <a id="apply-link" href="#"><span id="selection-count">0</span> 신청하기</a>
                 </div>
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
-                        // 모든 체크박스를 초기화 (체크 해제)
                         const checkboxes = document.querySelectorAll('.menu input[type="checkbox"]');
                         const layer = document.getElementById('layer');
                         const selectionCount = document.getElementById('selection-count');
                         const applyLink = document.getElementById('apply-link');
-                        const mobileBox = document.querySelector('.mobile-box');
 
-                        // 체크박스 초기화
-                        checkboxes.forEach(checkbox => checkbox.checked = false);
+                        // Define checkbox groups by their data-idx
+                        const multiSelectItems = ['agreement', 'curing', 'approval'];
+                        const singleSelectItems = ['door', 'remove', 'cleaning', 'appForUse'];
+                        const alertMessage = "해당 상품은 중복선택이 불가하세요. 개별선택을 해주세요";
 
-                        // 레이어 초기 상태 설정
-                        layer.style.display = 'none';
-                        selectionCount.textContent = '0';
-                        applyLink.href = '#';
-
-                        // 체크박스 상태 관리
-                        checkboxes.forEach(checkbox => {
-                            checkbox.addEventListener('change', function () {
-                                const label = this.closest('label');
-                                const multiSelectable = ['agreement', 'curing', 'approval'];
-                                const currentIdx = this.dataset.idx;
-
-                                if (this.checked) {
-                                    if (!multiSelectable.includes(currentIdx)) {
-                                        // 단일 선택 항목을 선택한 경우, 다른 모든 체크박스 해제
-                                        checkboxes.forEach(cb => {
-                                            if (cb !== this) {
-                                                cb.checked = false;
-                                                cb.closest('label').classList.remove('checked');
-                                            }
-                                        });
-
-                                    } else {
-                                        // 다중 선택 항목을 선택한 경우, 단일 선택 항목들만 해제
-                                        checkboxes.forEach(cb => {
-                                            if (cb.checked && !multiSelectable.includes(cb.dataset.idx)) {
-                                                cb.checked = false;
-                                                cb.closest('label').classList.remove('checked');
-                                            }
-                                        });
-                                    }
-                                }
-                                
-                                // 선택 상태에 따라 클래스 추가/제거
-                                if (this.checked) {
+                        // Function to update UI based on checkbox states
+                        function updateUI() {
+                            const selectedItems = [];
+                            checkboxes.forEach(cb => {
+                                const label = cb.closest('label');
+                                if (cb.checked) {
                                     label.classList.add('checked');
+                                    selectedItems.push(cb.dataset.idx);
                                 } else {
                                     label.classList.remove('checked');
+                                }
+                            });
+
+                            const queryString = selectedItems.length > 0 ? `?items=${selectedItems.join(',')}` : '#';
+                            applyLink.href = `/sub/request.php${queryString}`;
+                            layer.style.display = selectedItems.length > 0 ? 'block' : 'none';
+                        }
+
+                        // Add change listener to each checkbox
+                        checkboxes.forEach(checkbox => {
+                            checkbox.addEventListener('change', function() {
+                                if (!this.checked) {
+                                    updateUI();
+                                    return;
+                                }
+
+                                const currentItem = this.dataset.idx;
+                                const isCurrentSingle = singleSelectItems.includes(currentItem);
+                                const isCurrentMulti = multiSelectItems.includes(currentItem);
+
+                                const alreadyChecked = Array.from(checkboxes).filter(cb => cb.checked && cb !== this);
+                                const hasCheckedSingle = alreadyChecked.some(cb => singleSelectItems.includes(cb.dataset.idx));
+                                const hasCheckedMulti = alreadyChecked.some(cb => multiSelectItems.includes(cb.dataset.idx));
+
+                                let conflict = false;
+                                if (isCurrentSingle && hasCheckedMulti) {
+                                    conflict = true;
+                                } else if (isCurrentMulti && hasCheckedSingle) {
+                                    conflict = true;
+                                }
+
+                                if (conflict) {
+                                    alert(alertMessage);
+                                    this.checked = false; // Revert the checkbox state
+                                    updateUI();
+                                    return;
                                 }
 
                                 // 선택된 항목의 `data-idx` 값을 배열로 관리
@@ -147,34 +153,29 @@
                                     ? `?items=${selectedItems.join(',')}` 
                                     : '#';
                                 applyLink.href = `/sub/request.php${queryString}`;
-
-                                // 선택된 항목이 있으면 레이어 표시, 없으면 숨김
-                                layer.style.display = selectedItems.length > 0 ? 'block' : 'none';
-
-                                // 단일 선택 항목이 선택되었고, 버튼이 표시되면 스크롤 이동
-                                if (this.checked && !multiSelectable.includes(currentIdx) && selectedItems.length > 0) {
-                                    layer.scrollIntoView({ behavior: 'smooth' });
-                                }
+                                
+                                updateUI();
                             });
                         });
+
+                        // Initial UI setup
+                        checkboxes.forEach(cb => cb.checked = false);
+                        updateUI();
                     });
 
-                    // 페이지 캐시 로드 시 체크박스 초기화
+                    // Reset on page cache load
                     window.onpageshow = function (event) {
-                        if ( event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+                        if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
                             const checkboxes = document.querySelectorAll('.menu input[type="checkbox"]');
-                            const layer = document.getElementById('layer');
-                            const selectionCount = document.getElementById('selection-count');
-                            const applyLink = document.getElementById('apply-link');
-                            const mobileBox = document.querySelector('.mobile-box');
-
-                            // 체크박스 초기화
-                            checkboxes.forEach(checkbox => checkbox.checked = false);
-
-                            // 초기 상태로 리셋
-                            layer.style.display = 'none';
-                            selectionCount.textContent = '0';
-                            applyLink.href = '#';
+                            checkboxes.forEach(checkbox => {
+                                checkbox.checked = false;
+                                const label = checkbox.closest('label');
+                                if (label) {
+                                    label.classList.remove('checked');
+                                }
+                            });
+                            document.getElementById('layer').style.display = 'none';
+                            document.getElementById('apply-link').href = '#';
                         }
                     };
                 </script>

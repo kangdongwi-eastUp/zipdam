@@ -83,6 +83,24 @@
                             <?php $date_prnt = "{$formatted_begin}"; ?>
                             <input type="text" id="date_prnt" name="date_prnt" class="form-control" value="<?= $date_prnt ?>" readonly>
                         </div>
+                    <?php elseif (in_array('appForUse', $itemArray)): ?>
+                        <div class="form-group">
+                            <label for="date_begin">검사 희망일을 선택해 주세요.</label>
+                            <?php $date_prnt = "{$formatted_begin}"; ?>
+                            <input type="text" id="date_prnt" name="date_prnt" class="form-control" value="<?= $date_prnt ?>" readonly>
+                        </div>
+                    <?php elseif (in_array('installScreen', $itemArray)): ?>
+                        <div class="form-group">
+                            <label for="date_begin">시공 희망일을 선택해 주세요.</label>
+                            <?php $date_prnt = "{$formatted_begin}"; ?>
+                            <input type="text" id="date_prnt" name="date_prnt" class="form-control" value="<?= $date_prnt ?>" readonly>
+                        </div>
+                    <?php elseif (in_array('wasteCollection', $itemArray)): ?>
+                        <div class="form-group">
+                            <label for="date_begin">수거 희망일을 선택해 주세요.</label>
+                            <?php $date_prnt = "{$formatted_begin}"; ?>
+                            <input type="text" id="date_prnt" name="date_prnt" class="form-control" value="<?= $date_prnt ?>" readonly>
+                        </div>
                     <?php endif; ?>
                     
                     <!--공통A-->
@@ -188,8 +206,42 @@
                             <input type="text" id="space_size" name="space_size" value="<?= $_POST['space_size'] ?>" readonly>
                         </div>                                                  
                     <?php endif; ?>
+                    <?php if (in_array('appForUse', $itemArray)):?>
+                        <div class="form-group">
+                            <label for="zipdam_approval">집담에서 행위허가를 진행 하셨나요? </label>
+                            <input type="text" id="zipdam_approval" name="zipdam_approval" value="<?= $_POST['zipdam_approval'] ?>" readonly>
+                        </div>                                                  
+                    <?php endif; ?>
+                    <?php if (in_array('installScreen', $itemArray)):?>
+                        <div class="form-group">
+                            <label for="mang_type">방충망의 "망" 소재를 선택해 주세요. </label>
+                            <?php $mang_type = implode(', ', $_POST['mang_type']); ?>
+                            <input type="text" id="mang_type" name="mang_type" value="<?= $mang_type ?>" readonly>
+                        </div>                                                  
+                        <div class="form-group">
+                            <label for="mang_option">방충망 옵션을 선택해 주세요. </label>
+                            <?php $mang_option = implode(', ', $_POST['mang_option']); ?>
+                            <input type="text" id="mang_option" name="mang_option" value="<?= $mang_option ?>" readonly>
+                            </div>                                                  
+                    <?php endif; ?>
+                    <?php if (in_array('wasteCollection', $itemArray)):?>
+                            <div class="form-group">
+                                <label for="waste_option">수거할 예상 폐기물량을 선택해주세요. </label>
+                                <?php $waste_option = implode(', ', $_POST['waste_option']); ?>
+                                <input type="text" id="waste_option" name="waste_option" value="<?= $waste_option ?>" readonly>
+                            </div>                                                  
+                        <div class="form-group">
+                            <label for="waste_content">참고할 사항이 있다면 작성해 주세요.</label>
+                            <textarea id="waste_content" name="waste_content" class="form-control" rows="10" cols="50" readonly><?= htmlspecialchars($_POST['waste_content'] ?? '') ?></textarea>
+                        </div>                                                  
+                    <?php endif; ?>
 
                     <!--공통B-->
+                    <div class="form-group">
+                        <label for="door_product">다른 서비스도 이용하실 예정이신가요? </label>
+                        <?php $other_service_option = implode(', ', $_POST['other_service_option']); ?>
+                        <input type="text" id="other_service_option" name="other_service_option" value="<?= $other_service_option ?>" readonly>
+                    </div> 
                     <div class="form-group">
                         <label for="payment_method">결제 방법을 선택해 주세요. </label>
                         <input type="text" id="payment_method" name="payment_method" value="<?= $_POST['payment_method'] ?>" readonly>

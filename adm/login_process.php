@@ -21,8 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: index.php");
     } else {
         // 로그인 실패
-        echo "잘못된 사용자 이름 또는 비밀번호입니다.";
-        header("Location: login.php");
+        echo "<script>
+            alert('잘못된 사용자 이름 또는 비밀번호입니다.');
+            location.href = 'login.php';
+        </script>";
     }
 }
 ?>

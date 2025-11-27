@@ -1,0 +1,12 @@
+{
+    "name": "zipdam/zipdam",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Zipdam\\Zipdam\\": "src/"
+        }
+    },
+    "require": {
+        "solapi/sdk": "^5.0"
+    }
+}

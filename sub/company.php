@@ -30,15 +30,19 @@
                 <div class="content_wrap">
                     <div class="header">
                         <h1>인테리어의<br>시작과 끝에 집중합니다.</h1>
-                        <p>#입주민동의서 #보양 #행위허가<br>#방화판, 유리, 문 #보양탈거 #입주청소</p>
+                        <p>#입주민동의서 #보양 #행위허가<br>#방화판, 유리, 문 #보양탈거 #입주청소<br>#사용검사 #방충망시공 #폐기물수거</p>
                     </div>
                     <div class="image-gallery">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 2">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 3">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 4">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 5">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 6">                        
+                        <img src="/img/main/icon01.png" alt="이미지 1">
+                        <img src="/img/main/icon02.png" alt="이미지 2">
+                        <img src="/img/main/icon03.png" alt="이미지 3">
+                        <img src="/img/main/icon04.png" alt="이미지 4">
+                        <img src="/img/main/icon05.png" alt="이미지 5">
+                        <img src="/img/main/icon06.png" alt="이미지 6">
+                        <img src="/img/main/icon07.png" alt="이미지 7">
+                        <img src="/img/main/icon08.png" alt="이미지 8">
+                        <img src="/img/main/icon09.png" alt="이미지 9">
+                        
                     </div>
                 </div>
                 <div class="content_wrap">
@@ -47,7 +51,7 @@
                         <p>집담의 인테리어 지원서비스는 전국에서<br>동일한 조건으로 만날 수 있습니다.</p>
                     </div>
                     <div class="image">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 1"> -->
                     </div>
                 </div>
                 <div class="content_wrap">
@@ -56,7 +60,7 @@
                         <p>휴일 없이 오랜시간 (오전8시~오후8시) 까지<br>언제나 실시간 소통이 가능한 서비스를 제공 합니다.</p>
                     </div>
                     <div class="image">
-                        <img src="/img/sub/dummy.jpg" alt="이미지 1">
+                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 1"> -->
                     </div>
                 </div>
                 <div class="content_wrap">
