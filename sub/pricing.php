@@ -109,7 +109,7 @@
                         <div class="pricing-row">
                             <div>비닐 커버(링)</div>
                             <span>.......................................</span>
-                            <span class="price">55,000</span>
+                            <span class="price">55,000원</span>
                         </div>
                     </div>
                 </div>
@@ -336,7 +336,7 @@
                             <span class="price">440,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div style="font-weight:bold">블랙스텐레스 방충망 <span style="font-style:italic;">(Premium)</span></div>
+                            <div>블랙스텐레스 방충망 <span style="font-style:italic;">(Premium)</span></div>
                         </div>
                         <div class="pricing-row">
                             <div><span class="mangdesc">(반반창)</span></div>
