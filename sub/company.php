@@ -51,7 +51,7 @@
                         <p>집담의 인테리어 지원서비스는 전국에서<br>동일한 조건으로 만날 수 있습니다.</p>
                     </div>
                     <div class="image">
-                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 1"> -->
+                        <img src="/img/sub/company_nationwide.png" alt="전국 서비스">
                     </div>
                 </div>
                 <div class="content_wrap">
@@ -60,7 +60,7 @@
                         <p>휴일 없이 오랜시간 (오전8시~오후8시) 까지<br>언제나 실시간 소통이 가능한 서비스를 제공 합니다.</p>
                     </div>
                     <div class="image">
-                        <!-- <img src="/img/sub/dummy.jpg" alt="이미지 1"> -->
+                        <img src="/img/sub/company_365.png" alt="365일 서비스">
                     </div>
                 </div>
                 <div class="content_wrap">
