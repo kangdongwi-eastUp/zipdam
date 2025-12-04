@@ -240,32 +240,32 @@
                             <div>알루미늄 방충망</div>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반반창)</span></div>
+                            <div><span class="mangdesc">반반창</span></div>
                             <span>.......................................</span>
                             <span class="price">22,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반창)</span></div>
+                            <div><span class="mangdesc">반창</span></div>
                             <span>.......................................</span>
                             <span class="price">44,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(전창)</span></div>
+                            <div><span class="mangdesc">전창</span></div>
                             <span>.......................................</span>
                             <span class="price">55,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <div><span class="mangdesc">20평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">250,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <div><span class="mangdesc">30평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">300,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <div><span class="mangdesc">40평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">360,000원</span>
                         </div>
@@ -273,32 +273,32 @@
                             <div>섬유미세 방충망</div>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반반창)</span></div>
+                            <div><span class="mangdesc">반반창</span></div>
                             <span>.......................................</span>
                             <span class="price">33,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반창)</span></div>
+                            <div><span class="mangdesc">반창</span></div>
                             <span>.......................................</span>
                             <span class="price">55,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(전창)</span></div>
+                            <div><span class="mangdesc">전창</span></div>
                             <span>.......................................</span>
                             <span class="price">66,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <div><span class="mangdesc">20평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">280,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <div><span class="mangdesc">30평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">330,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <div><span class="mangdesc">40평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">400,000원</span>
                         </div>
@@ -306,32 +306,32 @@
                             <div>스텐레스 방충망</div>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반반창)</span></div>
+                            <div><span class="mangdesc">반반창</span></div>
                             <span>.......................................</span>
                             <span class="price">33,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반창)</span></div>
+                            <div><span class="mangdesc">반창</span></div>
                             <span>.......................................</span>
                             <span class="price">66,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(전창)</span></div>
+                            <div><span class="mangdesc">전창</span></div>
                             <span>.......................................</span>
                             <span class="price">77,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <div><span class="mangdesc">20평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">300,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <div><span class="mangdesc">30평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">360,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <div><span class="mangdesc">40평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">440,000원</span>
                         </div>
@@ -339,32 +339,32 @@
                             <div>블랙스텐레스 방충망 <span style="font-style:italic;">(Premium)</span></div>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반반창)</span></div>
+                            <div><span class="mangdesc">반반창</span></div>
                             <span>.......................................</span>
                             <span class="price">55,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(반창)</span></div>
+                            <div><span class="mangdesc">반창</span></div>
                             <span>.......................................</span>
                             <span class="price">77,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(전창)</span></div>
+                            <div><span class="mangdesc">전창</span></div>
                             <span>.......................................</span>
                             <span class="price">99,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(20평형대)</span></div>
+                            <div><span class="mangdesc">20평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">360,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(30평형대)</span></div>
+                            <div><span class="mangdesc">30평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">440,000원</span>
                         </div>
                         <div class="pricing-row">
-                            <div><span class="mangdesc">(40평형대)</span></div>
+                            <div><span class="mangdesc">40평형대</span></div>
                             <span>.......................................</span>
                             <span class="price">550,000원</span>
                         </div>
@@ -388,32 +388,32 @@
                         </div>
                         <div class="pricing-row">
                             <div>6분의1차 이하</div>
-                            <span>...................................</span>
+                            <span>.............................</span>
                             <span class="price">100,000원 부터 </span>
                         </div>
                         <div class="pricing-row">
                             <div>3분의1차 이하</div>
-                            <span>...................................</span>
+                            <span>.............................</span>
                             <span class="price">180,000원 부터 </span>
                         </div>
                         <div class="pricing-row">
                             <div>2분의1차 이하</div>
-                            <span>...................................</span>
+                            <span>.............................</span>
                             <span class="price">280,000원 부터 </span>
                         </div>
                         <div class="pricing-row">
                             <div>3분의2차 이하</div>
-                            <span>...................................</span>
+                            <span>.............................</span>
                             <span class="price">370,000원 부터 </span>
                         </div>
                         <div class="pricing-row">
                             <div>1차 이하</div>
-                            <span>...................................</span>
+                            <span>.............................</span>
                             <span class="price">460,000원 부터 </span>
                         </div>
                         <div class="pricing-row">
                             <div>현장정리+하역<span class="desc">(1시간)</span></div>
-                            <span>.......................................</span>
+                            <span>.............................</span>
                             <span class="price">20,000원</span>
                         </div>
                     </div>                       

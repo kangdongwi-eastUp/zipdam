@@ -49,9 +49,9 @@
                     <h1>새로운 소식과<br>이벤트로 여러분과 함께 해요.</h1>
                     <p>집담은 더 나은 서비스를 제공하고<br>지속할 수 있도록 끊임 없는 연구를 합니다.</p>
                 </div>
-                <div class="image">
+                <!-- <div class="image">
                     <img src="/img/sub/news_header.png" alt="소식">
-                </div>
+                </div> -->
                 <?php while ($row = $result->fetch_assoc()): ?>
                     <div class="news_content">
                         <span class="dt"><?= date('Y년 m월 d일', strtotime($row['created_at'])); ?></span>
