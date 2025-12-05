@@ -7,3 +7,22 @@
                         <a href="/sub/company.php"><img src="/img/icon_bottom_05.png">회사소개</a>
                     </nav>
                 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.footer nav a');
+
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        // 홈 링크('/')는 'index.php'와도 일치해야 합니다.
+        if (linkPath === currentPath || (linkPath === '/' && currentPath === '/index.php')) {
+            link.classList.add('active'); // active 클래스 추가
+            const img = link.querySelector('img');
+            if (img) {
+                const originalSrc = img.getAttribute('src');
+                img.setAttribute('src', originalSrc.replace('.png', '_sel.png'));
+            }
+        }
+    });
+});
+</script>

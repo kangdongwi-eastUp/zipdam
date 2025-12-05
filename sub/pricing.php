@@ -336,7 +336,7 @@
                         <span class="price">440,000원</span>
                     </div>
                     <div class="pricing-row">
-                        <div>블랙스텐레스 방충망 <span style="font-style:italic;">(Premium)</span></div>
+                        <div>블랙스텐레스 방충망 <span style="font-style:italic;font-weight:bold;">(Premium)</span></div>
                     </div>
                     <div class="pricing-row">
                         <div><span class="mangdesc">반반창</span></div>

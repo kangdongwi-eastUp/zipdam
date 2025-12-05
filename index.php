@@ -29,12 +29,13 @@
             <div class="mobile-box">
                 <div class="header">
                     <span>간편한 서비스 신청</span>
+                    <img src="/img/logo2.png" alt="집담 로고">
                 </div>
                 <div class="slider_wrap">
                     <ul class="slider_ul">
                         <li><img src="/img/main/main_slide01.jpg"></li>
-                        <!-- <li><img src="/img/main/main_slide01.jpg"></li>
-                        <li><img src="/img/main/main_slide01.jpg"></li> -->
+                        <li><img src="/img/main/main_slide02.png"></li>
+                        <li><img src="/img/main/main_slide03.png"></li>
                     </ul>
                     <a id="slider-prev" class="btn-prev" href="#"></a>
                     <a id="slider-next" class="btn-next" href="#"></a>
