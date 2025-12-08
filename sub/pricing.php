@@ -3,7 +3,7 @@
     <!-- 전체 배경 -->
     <div class="background">
         <!-- 왼쪽 텍스트 배경 -->
-        <div class="background-left">
+        <!-- <div class="background-left">
             <div class="logo">
                 <a href="/"><img src="/img/logo.png"></a>
             </div>
@@ -23,7 +23,7 @@
                 <img src="/img/icon_naverpay.png">
                 <img src="/img/icon_kakaopay.png">
             </div>
-        </div>
+        </div> -->
 
         <!-- 중앙 모바일 UI -->
         <div class="mobile-box">
