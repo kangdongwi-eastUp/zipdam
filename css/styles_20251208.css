@@ -1,21 +1,21 @@
 /* 기본 초기화 */
 body,html{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;background-color:#000;}
-.container{display:flex;justify-content:center;min-height:100vh;position:relative;}
+.container{display:flex;justify-content:center;align-items:center;min-height:100vh;position:relative;}
 /* 전체 배경 */
-.background{display:flex;flex-direction:row;width:100%;height:100%;position:relative;justify-content:center;}
+.background{display:flex;flex-direction:row;width:100%;height:100%;position:relative;}
 /* 왼쪽 배경 */
-.background-left{flex:1;background-color:rgb(0, 0, 0);color:white;padding:20px;display:flex;flex-direction:column;justify-content:space-between;max-width: 600px;}
+.background-left{width:400px;min-width:400px;flex:1;background-color:rgb(0, 0, 0);color:white;padding:20px;padding-left:600px;display:flex;flex-direction:column;justify-content:space-between;}
 .background-left h1{font-size:45px;line-height:1.4;}
 .background-left .badges{margin-bottom:10px;}
 .background-left .badges span img{vertical-align:middle;}
 .background-left .badges span{display:inline-block; padding:5px;background:#000;border-radius:10px;color:white;line-height:25px;border:1px solid #fff;}
 /* 중앙 모바일 박스 */
-/* .mobile-box{width:460px;min-width:460px;max-width:460px;height:100vh;min-height:100vh;max-height:100vh;background-color:white;box-shadow:0 10px 30px rgba(0,0,0,0.3);overflow:auto;z-index:10;position:fixed;box-sizing: border-box;padding-bottom: 100px;flex-shrink:0;margin:auto;} */
-.mobile-box{width:460px;min-width:460px;max-width:460px;height:100vh;background-color:white;box-shadow:0 10px 30px rgba(0,0,0,0.3);overflow:auto;z-index:10;position:absolute;box-sizing: border-box;padding-bottom: 100px;margin: auto;}
+/* .mobile-box{width:460px;height:100vh;min-height:100vh;background-color:white;box-shadow:0 10px 30px rgba(0,0,0,0.3);overflow:auto;z-index:10;position:relative;box-sizing: border-box;padding-bottom: 100px;} */
+.mobile-box{width:460px;min-width:460px;height:100vh;min-height:100vh;background-color:white;box-shadow:0 10px 30px rgba(0,0,0,0.3);overflow:auto;z-index:10;position:relative;box-sizing: border-box;padding-bottom: 100px;}
 .mobile-box::-webkit-scrollbar{display:none;}
 .mobile-box{-ms-overflow-style:none;scrollbar-width:none;}
 /* 푸터 */
-.footer{position:fixed;bottom:0;width:100%;max-width:460px;border-top:1px solid #ddd;padding-top:10px;background:#fff;box-sizing: border-box;z-index:20;left:50%;transform:translateX(-50%);}
+.footer{position:absolute;bottom:0;left:0;width:100%;border-top:1px solid #ddd;padding-top:10px;background:#fff;box-sizing: border-box;}
 .footer nav{display:flex;justify-content:space-around;padding:10px;}
 .footer nav a{text-decoration:none;color:black;font-size:14px;text-align:center;}
 .footer nav a img{display:block;margin:0 auto;}
@@ -31,20 +31,20 @@ body,html{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;
 }
 
 /* 오른쪽 배경 */
-.background-right{flex:1;}
+.background-right{min-width:20%;}
 /* 반응형 조정 - background-left 먼저 사라지게 */
 @media screen and (max-width:1266px){
     .background-left{display:none;}
     .background-right{display:none;}
     .mobile-box{width:460px; min-width: 460px; max-width: 460px;background-color: #fff;color: #000;margin:auto;}
-    .footer{width:100%; max-width: 460px;left:50%;transform:translateX(-50%);}
+    .footer{width:100%; max-width: 100%;}
 }
 /* 반응형 조정 */
 @media screen and (max-width:768px){
     /* 20251122 강동위 수정 - 모바일 화면에서 검정바탕에 흰색 글씨로 나오는거 웹 화면과 동일하게 수정 */
     /* .mobile-box{width:100%;border-radius:0;background-color: #000;color: #fff;} */
     .mobile-box{width:100%;height:100%;max-width:100%;min-width:100%;border-radius:0; background-color: #fff;color: #000;margin:0; max-width: none; min-width: 0;}
-    .footer{width:100%;max-width:100%;left:0;transform:none;position:fixed;}
+    .footer{width:100%;transform:none;position:absolute;}
 }
 /* 반응형 조정 */
 @media screen and (max-height:1024px){
