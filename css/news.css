@@ -13,6 +13,9 @@
 .header p {
     font-size: 1rem;
 }
+.mobile-box .header {
+    display: block; /* flex 대신 block으로 변경하여 자식 요소들이 수직으로 쌓이게 합니다. */
+}
 .dt {
     margin-bottom: 10px;
     display: block;

@@ -1,5 +1,8 @@
 .header{padding:30px 30px 0;margin-bottom:10px;}
 .header h1{font-size:1.6rem;margin:0;margin-bottom:30px;}
+.mobile-box .header {
+    display: block; /* flex 대신 block으로 변경하여 자식 요소들이 수직으로 쌓이게 합니다. */
+}
 .header p{font-size:1rem;}
 .image-gallery{display:flex;flex-wrap:wrap;justify-content:space-between;padding:30px 30px 0;margin-bottom:10px;}
 .image-gallery img{width:30%;margin-bottom:20px;border-radius:5px;}
